@@ -14,19 +14,19 @@ document.getElementById("login-form-element").addEventListener("submit", functio
     event.preventDefault(); // Ngăn không cho trang tải lại khi submit form
 
     // Lấy thông tin đăng nhập từ các input
-    const email = document.getElementById("login-email").value;
+    const username = document.getElementById("login-username").value;
     const password = document.getElementById("login-password").value;
 
     // Thông tin đăng nhập mẫu (thực tế sẽ được kiểm tra qua backend)
-    const validEmail = "user@example.com";
-    const validPassword = "password123";
+    const validUsername = "user123";  // Tên người dùng mẫu
+    const validPassword = "password123";  // Mật khẩu mẫu
 
     // Kiểm tra thông tin đăng nhập
-    if (email === validEmail && password === validPassword) {
+    if (username === validUsername && password === validPassword) {
         // Nếu đúng, chuyển hướng đến trang home.html
         alert("Đăng nhập thành công!");
-        window.location.href = "https://www.facebook.com/"; // Thay thế "home.html" bằng trang bạn muốn chuyển đến
+        window.location.href = "https://www.facebook.com"; // Thay thế "home.html" bằng trang bạn muốn chuyển đến
     } else {
-        alert("Email hoặc mật khẩu không đúng!");
+        alert("Tên người dùng hoặc mật khẩu không đúng!");
     }
 });
