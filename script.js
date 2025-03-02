@@ -25,7 +25,7 @@ document.getElementById("login-form-element").addEventListener("submit", functio
     if (email === validEmail && password === validPassword) {
         // Nếu đúng, chuyển hướng đến trang home.html
         alert("Đăng nhập thành công!");
-        window.location.href = "home.html"; // Thay thế "home.html" bằng trang bạn muốn chuyển đến
+        window.location.href = "https://www.facebook.com/"; // Thay thế "home.html" bằng trang bạn muốn chuyển đến
     } else {
         alert("Email hoặc mật khẩu không đúng!");
     }
