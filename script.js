@@ -14,4 +14,7 @@ document.getElementById('registration-form').addEventListener('submit', function
 
     // Đăng ký thành công
     alert('Đăng ký thành công!\nTên người dùng: ' + username + '\nEmail: ' + email);
+    
+    // Chuyển hướng sang trang đăng nhập
+    window.location.href = "login.html"; // Chuyển hướng đến trang login.html
 });
